@@ -1,0 +1,68 @@
+<keymap version="1" name="Eclipse - Ammach" parent="Eclipse">
+  <action id="AceAction">
+    <keyboard-shortcut first-keystroke="ctrl semicolon" />
+    <keyboard-shortcut first-keystroke="shift add" />
+  </action>
+  <action id="ChooseRunConfiguration">
+    <keyboard-shortcut first-keystroke="shift numpad0" />
+  </action>
+  <action id="EditSource">
+    <keyboard-shortcut first-keystroke="shift c" />
+  </action>
+  <action id="EditorAddOrRemoveCaret">
+    <mouse-shortcut keystroke="control alt button1" />
+  </action>
+  <action id="EditorCloneCaretBelow">
+    <keyboard-shortcut first-keystroke="ctrl numpad1" />
+  </action>
+  <action id="EditorCodeBlockEnd">
+    <keyboard-shortcut first-keystroke="alt b" />
+  </action>
+  <action id="EditorCodeBlockEndWithSelection">
+    <keyboard-shortcut first-keystroke="shift e" />
+  </action>
+  <action id="EditorCodeBlockStartWithSelection">
+    <keyboard-shortcut first-keystroke="shift b" />
+  </action>
+  <action id="EditorDuplicate">
+    <keyboard-shortcut first-keystroke="shift d" />
+  </action>
+  <action id="ExtractMethod">
+    <keyboard-shortcut first-keystroke="shift alt m" />
+    <keyboard-shortcut first-keystroke="shift m" />
+  </action>
+  <action id="GotoTest">
+    <keyboard-shortcut first-keystroke="alt t" />
+  </action>
+  <action id="IntroduceVariable">
+    <keyboard-shortcut first-keystroke="shift alt l" />
+    <keyboard-shortcut first-keystroke="shift l" />
+  </action>
+  <action id="Maven_f7f2b9aeapi-interop1b3efd16test">
+    <keyboard-shortcut first-keystroke="shift t" />
+  </action>
+  <action id="OpenCodotaSearch">
+    <keyboard-shortcut first-keystroke="alt s" />
+  </action>
+  <action id="PlaySavedMacrosAction">
+    <keyboard-shortcut first-keystroke="alt p" />
+  </action>
+  <action id="RenameElement">
+    <keyboard-shortcut first-keystroke="shift r" />
+  </action>
+  <action id="SearchEverywhere">
+    <keyboard-shortcut first-keystroke="shift s" />
+  </action>
+  <action id="SelectInProjectView">
+    <keyboard-shortcut first-keystroke="shift p" />
+  </action>
+  <action id="SplitVertically">
+    <keyboard-shortcut first-keystroke="alt v" />
+  </action>
+  <action id="Tool_External Tools_Gitkraken">
+    <keyboard-shortcut first-keystroke="shift k" />
+  </action>
+  <action id="import-all">
+    <keyboard-shortcut first-keystroke="alt i" />
+  </action>
+</keymap>

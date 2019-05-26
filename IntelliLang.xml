@@ -1,0 +1,16 @@
+<application>
+  <component name="LanguageInjectionConfiguration">
+    <injection language="JSON" injector-id="java">
+      <display-name>PactDslResponse.body (au.com.dius.pact.consumer.dsl)</display-name>
+      <place><![CDATA[psiParameter().ofMethod(0, psiMethod().withName("body").withParameters("java.lang.String").definedInClass("au.com.dius.pact.consumer.dsl.PactDslResponse"))]]></place>
+    </injection>
+    <injection language="PostgresPLSQL" injector-id="java">
+      <display-name>Query.value (org.springframework.data.jpa.repository)</display-name>
+      <place><![CDATA[psiMethod().withName("value").withParameters().definedInClass("org.springframework.data.jpa.repository.Query")]]></place>
+    </injection>
+    <injection language="JSON" injector-id="java">
+      <display-name>ResponseDefinitionBuilder.withBody (com.github.tomakehurst.wiremock.client)</display-name>
+      <place><![CDATA[psiParameter().ofMethod(0, psiMethod().withName("withBody").withParameters("java.lang.String").definedInClass("com.github.tomakehurst.wiremock.client.ResponseDefinitionBuilder"))]]></place>
+    </injection>
+  </component>
+</application>

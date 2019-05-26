@@ -1,0 +1,202 @@
+<application>
+  <component name="SquaretestSettings">
+    <option name="projectNameToSettingsMap">
+      <map>
+        <entry key="api-ecm">
+          <value>
+            <ProjectSettings>
+              <option name="projectName" value="api-ecm" />
+              <option name="templateLanguage" value="Java" />
+              <option name="template">
+                <Template>
+                  <option name="presentationName" value="JUnit4Mockito.java.ft" />
+                  <option name="internalTemplateSaveName" value="SQTJ-JUnit4Mockito.java" />
+                  <option name="isInternal" value="true" />
+                </Template>
+              </option>
+              <option name="moduleAutoConfigSetting" value="AUTOMATICALLY_CONFIGURE_WHEN_POSSIBLE" />
+            </ProjectSettings>
+          </value>
+        </entry>
+        <entry key="api-enrollment">
+          <value>
+            <ProjectSettings>
+              <option name="projectName" value="api-enrollment" />
+              <option name="templateLanguage" value="Java" />
+              <option name="template">
+                <Template>
+                  <option name="presentationName" value="api-enrollment.java.ft" />
+                  <option name="internalTemplateSaveName" value="SQTJ-api-enrollment.java" />
+                </Template>
+              </option>
+              <option name="moduleAutoConfigSetting" value="AUTOMATICALLY_CONFIGURE_WHEN_POSSIBLE" />
+            </ProjectSettings>
+          </value>
+        </entry>
+        <entry key="api-interop">
+          <value>
+            <ProjectSettings>
+              <option name="projectName" value="api-interop" />
+              <option name="templateLanguage" value="Java" />
+              <option name="moduleAutoConfigSetting" value="AUTOMATICALLY_CONFIGURE_WHEN_POSSIBLE" />
+            </ProjectSettings>
+          </value>
+        </entry>
+        <entry key="api-notification-center">
+          <value>
+            <ProjectSettings>
+              <option name="projectName" value="api-notification-center" />
+              <option name="templateLanguage" value="Java" />
+              <option name="template">
+                <Template>
+                  <option name="presentationName" value="JUnit4Mockito.java.ft" />
+                  <option name="internalTemplateSaveName" value="SQTJ-JUnit4Mockito.java" />
+                  <option name="isInternal" value="true" />
+                </Template>
+              </option>
+              <option name="moduleAutoConfigSetting" value="AUTOMATICALLY_CONFIGURE_WHEN_POSSIBLE" />
+            </ProjectSettings>
+          </value>
+        </entry>
+        <entry key="api-project">
+          <value>
+            <ProjectSettings>
+              <option name="projectName" value="api-project" />
+              <option name="templateLanguage" value="Java" />
+              <option name="template">
+                <Template>
+                  <option name="presentationName" value="JUnit4Mockito.java.ft" />
+                  <option name="internalTemplateSaveName" value="SQTJ-JUnit4Mockito.java" />
+                  <option name="isInternal" value="true" />
+                </Template>
+              </option>
+              <option name="moduleAutoConfigSetting" value="AUTOMATICALLY_CONFIGURE_WHEN_POSSIBLE" />
+            </ProjectSettings>
+          </value>
+        </entry>
+        <entry key="api-user">
+          <value>
+            <ProjectSettings>
+              <option name="projectName" value="api-user" />
+              <option name="templateLanguage" value="Java" />
+              <option name="template">
+                <Template>
+                  <option name="presentationName" value="api-enrollment.java.ft" />
+                  <option name="internalTemplateSaveName" value="SQTJ-api-enrollment.java" />
+                </Template>
+              </option>
+              <option name="moduleAutoConfigSetting" value="AUTOMATICALLY_CONFIGURE_WHEN_POSSIBLE" />
+            </ProjectSettings>
+          </value>
+        </entry>
+        <entry key="pitest">
+          <value>
+            <ProjectSettings>
+              <option name="projectName" value="pitest" />
+              <option name="templateLanguage" value="Java" />
+              <option name="template">
+                <Template>
+                  <option name="presentationName" value="JUnit4Mockito.java.ft" />
+                  <option name="internalTemplateSaveName" value="SQTJ-JUnit4Mockito.java" />
+                  <option name="isInternal" value="true" />
+                </Template>
+              </option>
+              <option name="moduleAutoConfigSetting" value="AUTOMATICALLY_CONFIGURE_WHEN_POSSIBLE" />
+            </ProjectSettings>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectNameModuleNameToSettingsMap">
+      <map>
+        <entry key="api-ecm_api-ecm">
+          <value>
+            <ModuleSettings>
+              <option name="moduleName" value="api-ecm" />
+              <option name="testDirectoryRoot" value="src/test/java" />
+            </ModuleSettings>
+          </value>
+        </entry>
+        <entry key="api-enrollment_api-enrollment">
+          <value>
+            <ModuleSettings>
+              <option name="moduleName" value="api-enrollment" />
+              <option name="templateLanguage" value="Java" />
+              <option name="template">
+                <Template>
+                  <option name="presentationName" value="api-enrollment.java.ft" />
+                  <option name="internalTemplateSaveName" value="SQTJ-api-enrollment.java" />
+                </Template>
+              </option>
+            </ModuleSettings>
+          </value>
+        </entry>
+        <entry key="api-interop_api-interop">
+          <value>
+            <ModuleSettings>
+              <option name="moduleName" value="api-interop" />
+              <option name="templateLanguage" value="Java" />
+              <option name="template">
+                <Template>
+                  <option name="presentationName" value="JUnit4Mockito.java.ft" />
+                  <option name="internalTemplateSaveName" value="SQTJ-JUnit4Mockito.java" />
+                  <option name="isInternal" value="true" />
+                </Template>
+              </option>
+              <option name="testDirectoryRoot" value="src/test/java" />
+            </ModuleSettings>
+          </value>
+        </entry>
+        <entry key="api-notification-center_api-notification-center">
+          <value>
+            <ModuleSettings>
+              <option name="moduleName" value="api-notification-center" />
+              <option name="templateLanguage" value="Java" />
+              <option name="template">
+                <Template>
+                  <option name="presentationName" value="JUnit4Mockito.java.ft" />
+                  <option name="internalTemplateSaveName" value="SQTJ-JUnit4Mockito.java" />
+                  <option name="isInternal" value="true" />
+                </Template>
+              </option>
+              <option name="testDirectoryRoot" value="src/test/java" />
+            </ModuleSettings>
+          </value>
+        </entry>
+        <entry key="api-project_api-project">
+          <value>
+            <ModuleSettings>
+              <option name="moduleName" value="api-project" />
+              <option name="testDirectoryRoot" value="src/test/java" />
+            </ModuleSettings>
+          </value>
+        </entry>
+        <entry key="api-user_api-user">
+          <value>
+            <ModuleSettings>
+              <option name="moduleName" value="api-user" />
+              <option name="templateLanguage" value="Java" />
+              <option name="template">
+                <Template>
+                  <option name="presentationName" value="api-enrollment.java.ft" />
+                  <option name="internalTemplateSaveName" value="SQTJ-api-enrollment.java" />
+                </Template>
+              </option>
+            </ModuleSettings>
+          </value>
+        </entry>
+        <entry key="pitest_pitest">
+          <value>
+            <ModuleSettings>
+              <option name="moduleName" value="pitest" />
+              <option name="testDirectoryRoot" value="src/test/java" />
+            </ModuleSettings>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="openTestFilePreference" value="ALWAYS_IN_NEXT_EDITOR" />
+    <option name="hasShownMetricsDisclosure" value="true" />
+    <option name="id" value="3a1c5ff4-228e-49f6-ab05-d1f96699bdda" />
+  </component>
+</application>

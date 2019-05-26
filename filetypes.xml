@@ -1,0 +1,14 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern="Pull Request description template" type="Markdown" />
+      <mapping pattern="interface" type="PLAIN_TEXT" />
+      <mapping pattern="CreateSubscriptionTest" type="PLAIN_TEXT" />
+      <mapping pattern="GetFavoriteRelationships.feature" type="PLAIN_TEXT" />
+      <mapping pattern="fileName" type="PLAIN_TEXT" />
+      <mapping pattern="20180622102230_create_dossier" type="PLAIN_TEXT" />
+      <mapping ext="hbs" type="PLAIN_TEXT" />
+      <mapping pattern="20180904104230_make_address_optional" type="XML" />
+    </extensionMap>
+  </component>
+</application>

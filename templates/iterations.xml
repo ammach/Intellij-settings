@@ -1,0 +1,12 @@
+<templateSet group="iterations">
+  <template name="mk" value="@Mock&#10;private $END$ ;" description="@Mock annotation" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="te" value="@Test&#10;public void should_$END$_when_(){&#10;    &#10;}" description="Add test case" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

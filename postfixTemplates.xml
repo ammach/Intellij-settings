@@ -1,0 +1,28 @@
+<application>
+  <component name="PostfixTemplates">
+    <template id="assertOptional@userDefined" key=".assertOptional" provider="builtin.java" language-level="1.3" topmost="false">
+      <conditions />
+      <template name="fakeKey" value="assertThat($EXPR$).isPresent();&#10;assertThat($EXPR$.get()).isEqualToComparingFieldByField(new );" description="" toReformat="true" toShortenFQNames="true" />
+    </template>
+    <template id="assertObject@userDefined" key=".assertObject" provider="builtin.java" language-level="1.3" topmost="false">
+      <conditions />
+      <template name="fakeKey" value="assertThat($EXPR$).isEqualToComparingFieldByField(new);" description="" toReformat="true" toShortenFQNames="true" />
+    </template>
+    <template id="mockAndReturnObject@userDefined" key=".mockAndReturnObject" provider="builtin.java" language-level="1.3" topmost="false">
+      <conditions />
+      <template name="fakeKey" value="when($EXPR$).thenReturn();" toReformat="true" toShortenFQNames="true" />
+    </template>
+    <template id="mockAndReturnOptional@userDefined" key=".mockAndReturnOptional" provider="builtin.java" language-level="1.3" topmost="false">
+      <conditions />
+      <template name="fakeKey" value="when($EXPR$).thenReturn(Optional.of());" toReformat="true" toShortenFQNames="true" />
+    </template>
+    <template id="mockAndReturnList@userDefined" key=".mockAndReturnList" provider="builtin.java" language-level="1.3" topmost="false">
+      <conditions />
+      <template name="fakeKey" value="when($EXPR$).thenReturn(singletonList());" toReformat="true" toShortenFQNames="true" />
+    </template>
+    <template id="assertList@userDefined" key=".assertList" provider="builtin.java" language-level="1.3" topmost="false">
+      <conditions />
+      <template name="fakeKey" value="assertThat($EXPR$).hasSize(1);&#10;assertThat($EXPR$.get(0)).isEqualToComparingFieldByField(new );" description="" toReformat="true" toShortenFQNames="true" />
+    </template>
+  </component>
+</application>

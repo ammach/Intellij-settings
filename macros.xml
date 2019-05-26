@@ -1,0 +1,22 @@
+<application>
+  <component name="ActionMacroManager">
+    <macro name="create test">
+      <action id="GotoTest" />
+      <shortuct text="ENTER" />
+      <action id="SplitVertically" />
+      <shortuct text="control F4" />
+      <action id="GotoTest" />
+      <shortuct text="ENTER" />
+      <action id="EditorTextEnd" />
+    </macro>
+    <macro name="go to test and choose">
+      <action id="GotoTest" />
+      <shortuct text="ENTER" />
+      <action id="SplitVertically" />
+      <shortuct text="control F4" />
+      <action id="GotoTest" />
+      <shortuct text="ENTER" />
+      <action id="FileStructurePopup" />
+    </macro>
+  </component>
+</application>
