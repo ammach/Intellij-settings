@@ -1,0 +1,7 @@
+<application>
+  <component name="ExportableFileTemplateSettings">
+    <default_templates>
+      <template name="SQTJ-api-enrollment.java" reformat="false" live-template-enabled="false" />
+    </default_templates>
+  </component>
+</application>
