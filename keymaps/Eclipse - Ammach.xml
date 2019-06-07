@@ -6,6 +6,12 @@
   <action id="ChooseRunConfiguration">
     <keyboard-shortcut first-keystroke="shift numpad0" />
   </action>
+  <action id="CloseAllEditorsButActive">
+    <keyboard-shortcut first-keystroke="alt numpad3" />
+  </action>
+  <action id="CloseContent">
+    <keyboard-shortcut first-keystroke="alt numpad1" />
+  </action>
   <action id="EditSource">
     <keyboard-shortcut first-keystroke="shift c" />
   </action>
@@ -41,6 +47,9 @@
   <action id="Maven_f7f2b9aeapi-interop1b3efd16test">
     <keyboard-shortcut first-keystroke="shift t" />
   </action>
+  <action id="MoveEditorToOppositeTabGroup">
+    <keyboard-shortcut first-keystroke="alt m" />
+  </action>
   <action id="OpenCodotaSearch">
     <keyboard-shortcut first-keystroke="alt s" />
   </action>
@@ -60,7 +69,13 @@
     <keyboard-shortcut first-keystroke="alt v" />
   </action>
   <action id="Tool_External Tools_Gitkraken">
-    <keyboard-shortcut first-keystroke="shift k" />
+    <keyboard-shortcut first-keystroke="alt g" />
+  </action>
+  <action id="context.load">
+    <keyboard-shortcut first-keystroke="alt l" />
+  </action>
+  <action id="context.save">
+    <keyboard-shortcut first-keystroke="alt c" />
   </action>
   <action id="import-all">
     <keyboard-shortcut first-keystroke="alt i" />

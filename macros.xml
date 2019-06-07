@@ -1,22 +1,9 @@
 <application>
   <component name="ActionMacroManager">
-    <macro name="create test">
+    <macro name="Move To Test">
       <action id="GotoTest" />
       <shortuct text="ENTER" />
-      <action id="SplitVertically" />
-      <shortuct text="control F4" />
-      <action id="GotoTest" />
-      <shortuct text="ENTER" />
-      <action id="EditorTextEnd" />
-    </macro>
-    <macro name="go to test and choose">
-      <action id="GotoTest" />
-      <shortuct text="ENTER" />
-      <action id="SplitVertically" />
-      <shortuct text="control F4" />
-      <action id="GotoTest" />
-      <shortuct text="ENTER" />
-      <action id="FileStructurePopup" />
+      <action id="MoveEditorToOppositeTabGroup" />
     </macro>
   </component>
 </application>
