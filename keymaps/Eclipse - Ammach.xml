@@ -68,6 +68,7 @@
   <action id="SplitVertically">
     <keyboard-shortcut first-keystroke="alt v" />
   </action>
+  <action id="Stringify" />
   <action id="Tool_External Tools_Gitkraken">
     <keyboard-shortcut first-keystroke="alt g" />
   </action>
