@@ -1,0 +1,127 @@
+<application>
+  <component name="CodeGen">
+    <option name="templates">
+      <Templates>
+        <option name="roots">
+          <list>
+            <CodeRoot>
+              <option name="groups">
+                <list>
+                  <CodeGroup>
+                    <option name="id" value="e67197d8-6910-423f-8b59-1851c39c8cb9" />
+                    <option name="level" value="1" />
+                    <option name="name" value="model-service" />
+                    <option name="templates">
+                      <list>
+                        <CodeTemplate>
+                          <option name="display" value="Model" />
+                          <option name="extension" value="java" />
+                          <option name="filename" value="${model}" />
+                          <option name="id" value="ea0797fc-6825-4696-a97f-93550d1b528e" />
+                          <option name="order" value="1" />
+                          <option name="resources" value="false" />
+                          <option name="subPath" value="model" />
+                          <option name="template" value="&#10;import lombok.Data;&#10;&#10;import java.io.Serializable;&#10;import java.util.Date;&#10;&#10;/**&#10; * $!{comment}&#10; * @author $!{email}&#10; * @date ${NOW}&#10; * Created by CodeGen .&#10; */&#10;@Data&#10;public class ${model} implements Serializable {&#10;&#10;    private static final long serialVersionUID = ${serialVersionUID}L;&#10;&#10;    /**&#10;     * 自增主键&#10;     */&#10;    private Long id;&#10;    #foreach($item in $fields)&#10;&#10;    /**&#10;     * ${item.comment}&#10;     */&#10;    private ${item.fieldType} ${item.field};&#10;    #end&#10;&#10;    /**&#10;     * 创建时间&#10;     */&#10;    private Date createdAt;&#10;&#10;    /**&#10;     * 更新时间&#10;     */&#10;    private Date updatedAt;&#10;&#10;}" />
+                        </CodeTemplate>
+                        <CodeTemplate>
+                          <option name="display" value="ReadService" />
+                          <option name="extension" value="java" />
+                          <option name="filename" value="${model}ReadService" />
+                          <option name="id" value="4a7cc5b2-73af-4d3f-9296-0810863efd85" />
+                          <option name="order" value="1" />
+                          <option name="resources" value="false" />
+                          <option name="subPath" value="service" />
+                          <option name="template" value="&#10;import java.util.Map;&#10;import java.util.List;&#10;&#10;#ImportPackage(${model})&#10;&#10;/**&#10; * $!{comment}读服务接口&#10; * @author $!{email}&#10; * @date ${NOW}&#10; * Created by CodeGen .&#10; */&#10;public interface ${model}ReadService {&#10;&#10;    /**&#10;     * 查询$!{comment}&#10;     * @param id&#10;     * @return #LowerCase(${model})&#10;&#10;     */&#10;    ${model} findById(Long id);&#10;&#10;}" />
+                        </CodeTemplate>
+                        <CodeTemplate>
+                          <option name="display" value="WriteService" />
+                          <option name="extension" value="java" />
+                          <option name="filename" value="${model}WriteService" />
+                          <option name="id" value="3ed0472a-672f-4c75-8251-df3dea5c178c" />
+                          <option name="order" value="1" />
+                          <option name="resources" value="false" />
+                          <option name="subPath" value="service" />
+                          <option name="template" value="&#10;#ImportPackage(${model})&#10;&#10;/**&#10; * $!{comment}写服务接口&#10; * @author $!{email}&#10; * @date ${NOW}&#10; * Created by CodeGen .&#10; */&#10;public interface ${model}WriteService {&#10;&#10;    /**&#10;     * 创建$!{comment}&#10;     * @param #LowerCase(${model})&#10;&#10;     * @return Boolean&#10;     */&#10;    Long create(${model} #LowerCase(${model}));&#10;&#10;}" />
+                        </CodeTemplate>
+                      </list>
+                    </option>
+                  </CodeGroup>
+                  <CodeGroup>
+                    <option name="id" value="1b60e744-834e-4342-9831-79adf2bdbc91" />
+                    <option name="level" value="2" />
+                    <option name="name" value="service-impl-dao" />
+                    <option name="templates">
+                      <list>
+                        <CodeTemplate>
+                          <option name="display" value="Dao" />
+                          <option name="extension" value="java" />
+                          <option name="filename" value="${model}Dao" />
+                          <option name="id" value="c1f7fe58-76fc-48ed-94f7-b17017d094ce" />
+                          <option name="order" value="1" />
+                          <option name="resources" value="false" />
+                          <option name="subPath" value="dao" />
+                          <option name="template" value="&#10;import org.springframework.stereotype.Repository;&#10;&#10;#ImportPackage(${model})&#10;&#10;/**&#10; * $!{comment} DAO层&#10; * @author $!{email}&#10; * @date ${NOW}&#10; * Created by CodeGen .&#10; */&#10;@Repository&#10;public class ${model}Dao {&#10;&#10;    /**&#10;    * 创建对象&#10;    */&#10;    public Boolean create(${model} #LowerCase(${model})){&#10;        return Boolean.TRUE;&#10;    }&#10;&#10;    /**&#10;    * 查询对象&#10;    */&#10;    public ${model} findById(Long id){&#10;        return new ${model}();&#10;    }&#10;&#10;}&#10;" />
+                        </CodeTemplate>
+                        <CodeTemplate>
+                          <option name="display" value="ReadService" />
+                          <option name="extension" value="java" />
+                          <option name="filename" value="${model}ReadServiceImpl" />
+                          <option name="id" value="66fd2999-5f84-4ba5-81d7-41877bb2548c" />
+                          <option name="order" value="1" />
+                          <option name="resources" value="false" />
+                          <option name="subPath" value="service" />
+                          <option name="template" value="&#10;import org.springframework.beans.factory.annotation.Autowired;&#10;import org.springframework.stereotype.Service;&#10;&#10;import java.util.Map;&#10;import java.util.List;&#10;&#10;#ImportPackage(${model})&#10;#ImportPackage(&quot;${model}ReadService&quot;)&#10;#ImportPackage(&quot;${model}Dao&quot;)&#10;&#10;/**&#10; * $!{comment}读服务实现类&#10; * @author $!{email}&#10; * @date ${NOW}&#10; * Created by CodeGen .&#10; */&#10;@Service&#10;public class ${model}ReadServiceImpl implements ${model}ReadService {&#10;&#10;    @Autowired&#10;    private ${model}Dao #LowerCase(${model})Dao;&#10;&#10;    @Override&#10;    public ${model} findById(Long id) {&#10;        try{&#10;            return #LowerCase(${model})Dao.findById(id);&#10;        }catch (Exception e){&#10;            // for example&#10;            return new ${model}();&#10;        }&#10;    }&#10;&#10;}&#10;" />
+                        </CodeTemplate>
+                        <CodeTemplate>
+                          <option name="display" value="WriteService" />
+                          <option name="extension" value="java" />
+                          <option name="filename" value="${model}WriteServiceImpl" />
+                          <option name="id" value="5bbb84dc-44ea-4218-acdb-0ddcd36ffa56" />
+                          <option name="order" value="1" />
+                          <option name="resources" value="false" />
+                          <option name="subPath" value="service" />
+                          <option name="template" value="&#10;import org.springframework.beans.factory.annotation.Autowired;&#10;import org.springframework.stereotype.Service;&#10;&#10;#ImportPackage(${model})&#10;#ImportPackage(&quot;${model}WriteService&quot;)&#10;#ImportPackage(&quot;${model}Dao&quot;)&#10;&#10;/**&#10; * $!{comment}写服务实现类&#10; * @author $!{email}&#10; * @date ${NOW}&#10; * Created by CodeGen .&#10; */&#10;@Service&#10;public class ${model}WriteServiceImpl implements ${model}WriteService {&#10;&#10;    @Autowired&#10;    private ${model}Dao #LowerCase(${model})Dao;&#10;&#10;    @Override&#10;    public Long create(${model} #LowerCase(${model})) {&#10;        try{&#10;            #LowerCase(${model})Dao.create(#LowerCase(${model}));&#10;            return #LowerCase(${model}).getId();&#10;        }catch (Exception e){&#10;            // for example&#10;            return 1L;&#10;        }&#10;    }&#10;&#10;}" />
+                        </CodeTemplate>
+                        <CodeTemplate>
+                          <option name="display" value="Mapper" />
+                          <option name="extension" value="xml" />
+                          <option name="filename" value="${model}Mapper" />
+                          <option name="id" value="54a79f0b-2cc5-4805-8fb9-b715891fc260" />
+                          <option name="order" value="1" />
+                          <option name="resources" value="true" />
+                          <option name="subPath" value="mapper" />
+                          <option name="template" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;&#10;&lt;!DOCTYPE mapper PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot; &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;&gt;&#10;&lt;!--&#10; ~&#10; ~ @author $!{email}&#10; ~ @date ${NOW}&#10; ~ Created by CodeGen .&#10;--&gt;&#10;&#10;&lt;mapper namespace=&quot;${model}&quot;&gt;&#10;    &lt;resultMap id=&quot;${model}Map&quot; type=&quot;${model}&quot;&gt;&#10;        &lt;id property=&quot;id&quot; column=&quot;id&quot;/&gt;&#10;    #foreach($item in $fields)&#10;        &lt;result property=&quot;${item.field}&quot; column=&quot;${item.column}&quot;/&gt;&#10;    #end&#10;        &lt;result property=&quot;createdAt&quot; column=&quot;created_at&quot;/&gt;&#10;        &lt;result property=&quot;updatedAt&quot; column=&quot;updated_at&quot;/&gt;&#10;    &lt;/resultMap&gt;&#10;&#10;    &lt;sql id=&quot;table_name&quot;&gt;&#10;        ${table}&#10;    &lt;/sql&gt;&#10;&#10;    &lt;sql id=&quot;columns_all&quot;&gt;&#10;        id,&#10;        &lt;include refid=&quot;columns_exclude_id&quot;/&gt;&#10;    &lt;/sql&gt;&#10;&#10;    &lt;sql id=&quot;columns_exclude_id&quot;&gt;&#10;        #foreach($item in $fields)`${item.column}`, #end&#10;        created_at, updated_at&#10;    &lt;/sql&gt;&#10;&#10;    &lt;sql id=&quot;values_exclude_id&quot;&gt;&#10;        #foreach($item in $fields)#{${item.field}}, #end&#10;        now(), now()&#10;    &lt;/sql&gt;&#10;&#10;    &lt;sql id=&quot;criteria&quot;&gt;&#10;        &lt;where&gt;&#10;        #foreach($item in $fields)&#10;            &lt;if test=&quot;${item.field} != null&quot;&gt;AND `${item.column}` = #{${item.field}}&lt;/if&gt;&#10;        #end&#10;            &lt;if test=&quot;createdAt != null&quot;&gt;AND &lt;![CDATA[created_at &gt;= #{createdAt}]]&gt; &lt;/if&gt;&#10;            &lt;if test=&quot;updatedAt != null&quot;&gt;AND &lt;![CDATA[updated_at &lt; #{updatedAt}]]&gt; &lt;/if&gt;&#10;        &lt;/where&gt;&#10;    &lt;/sql&gt;&#10;&#10;    &lt;insert id=&quot;create&quot; parameterType=&quot;${model}&quot; useGeneratedKeys=&quot;true&quot; keyProperty=&quot;id&quot;&gt;&#10;        INSERT INTO &lt;include refid=&quot;table_name&quot;/&gt;&#10;        (&lt;include refid=&quot;columns_exclude_id&quot;/&gt;)&#10;        VALUES&#10;        (&lt;include refid=&quot;values_exclude_id&quot;/&gt;)&#10;    &lt;/insert&gt;&#10;&#10;    &lt;insert id=&quot;creates&quot; parameterType=&quot;${model}&quot; useGeneratedKeys=&quot;true&quot;&gt;&#10;        INSERT INTO &lt;include refid=&quot;table_name&quot;/&gt;&#10;        (&lt;include refid=&quot;columns_exclude_id&quot;/&gt;)&#10;        VALUES&#10;        &lt;foreach collection=&quot;list&quot; item=&quot;i&quot; index=&quot;index&quot; separator=&quot;,&quot; &gt;&#10;            (#foreach($item in $fields)#{i.${item.field}}, #end&#10;            now(), now())&#10;        &lt;/foreach&gt;&#10;    &lt;/insert&gt;&#10;&#10;    &lt;select id=&quot;findById&quot; parameterType=&quot;long&quot; resultMap=&quot;${model}Map&quot;&gt;&#10;        SELECT &lt;include refid=&quot;columns_all&quot;/&gt;&#10;        FROM &lt;include refid=&quot;table_name&quot;/&gt;&#10;        WHERE id = #{id} LIMIT 1&#10;    &lt;/select&gt;&#10;&#10;    &lt;select id=&quot;findByIds&quot; parameterType=&quot;list&quot; resultMap=&quot;${model}Map&quot;&gt;&#10;        SELECT &lt;include refid=&quot;columns_all&quot;/&gt;&#10;        FROM &lt;include refid=&quot;table_name&quot;/&gt;&#10;        WHERE id IN&#10;        &lt;foreach item=&quot;id&quot; collection=&quot;list&quot; open=&quot;(&quot; separator=&quot;,&quot; close=&quot;)&quot;&gt;&#10;            #{id}&#10;        &lt;/foreach&gt;&#10;    &lt;/select&gt;&#10;&#10;    &lt;update id=&quot;update&quot; parameterType=&quot;${model}&quot;&gt;&#10;        UPDATE &lt;include refid=&quot;table_name&quot;/&gt;&#10;        &lt;set&gt;&#10;        #foreach($item in $fields)&#10;            &lt;if test=&quot;${item.field} != null&quot;&gt;`${item.column}` = #{${item.field}},&lt;/if&gt;&#10;        #end&#10;            updated_at = now()&#10;        &lt;/set&gt;&#10;        WHERE id = #{id}&#10;    &lt;/update&gt;&#10;&#10;    &lt;delete id=&quot;delete&quot; parameterType=&quot;long&quot;&gt;&#10;        DELETE FROM &lt;include refid=&quot;table_name&quot;/&gt;&#10;        WHERE id = #{id}&#10;    &lt;/delete&gt;&#10;    &#10;    &lt;select id=&quot;count&quot; parameterType=&quot;map&quot; resultType=&quot;long&quot;&gt;&#10;        SELECT COUNT(1)&#10;        FROM &lt;include refid=&quot;table_name&quot;/&gt;&#10;        &lt;include refid=&quot;criteria&quot;/&gt;&#10;    &lt;/select&gt;&#10;&#10;    &lt;select id=&quot;paging&quot; parameterType=&quot;map&quot; resultMap=&quot;${model}Map&quot;&gt;&#10;        SELECT &lt;include refid=&quot;columns_all&quot;/&gt;&#10;        FROM &lt;include refid=&quot;table_name&quot;/&gt;&#10;        &lt;include refid=&quot;criteria&quot;/&gt;&#10;        ORDER BY `id` DESC&#10;        LIMIT #{offset}, #{limit}&#10;    &lt;/select&gt;&#10;&#10;    &lt;select id=&quot;list&quot; parameterType=&quot;map&quot; resultMap=&quot;${model}Map&quot;&gt;&#10;        SELECT &lt;include refid=&quot;columns_all&quot;/&gt;&#10;        FROM &lt;include refid=&quot;table_name&quot;/&gt;&#10;        &lt;include refid=&quot;criteria&quot;/&gt;&#10;        ORDER BY `id` DESC&#10;    &lt;/select&gt;&#10;&#10;&lt;/mapper&gt;&#10;" />
+                        </CodeTemplate>
+                      </list>
+                    </option>
+                  </CodeGroup>
+                  <CodeGroup>
+                    <option name="id" value="d9c6878f-d604-4c47-9f3e-292cadc6f4fb" />
+                    <option name="level" value="2" />
+                    <option name="name" value="api" />
+                    <option name="templates">
+                      <list>
+                        <CodeTemplate>
+                          <option name="display" value="Controller" />
+                          <option name="extension" value="java" />
+                          <option name="filename" value="${model}s" />
+                          <option name="id" value="b27658f1-d5f1-49f4-a5cd-d74247669306" />
+                          <option name="order" value="1" />
+                          <option name="resources" value="false" />
+                          <option name="subPath" value="front" />
+                          <option name="template" value="&#10;import org.springframework.http.MediaType;&#10;import org.springframework.web.bind.annotation.RestController;&#10;import org.springframework.web.bind.annotation.RequestBody;&#10;import org.springframework.web.bind.annotation.RequestMapping;&#10;import org.springframework.web.bind.annotation.*;&#10;&#10;import java.util.Map;&#10;import java.util.List;&#10;&#10;#ImportPackage(${model})&#10;#ImportPackage(&quot;${model}ReadService&quot;)&#10;#ImportPackage(&quot;${model}WriteService&quot;)&#10;&#10;/**&#10; * $!{comment}&#10; * @author $!{email}&#10; * @date ${NOW}&#10; * Created by CodeGen .&#10; */&#10;@RestController&#10;@RequestMapping&#10;public class ${model}s {&#10;&#10;    @Autowired&#10;    private ${model}WriteService #LowerCase(${model})WriteService;&#10;&#10;    @Autowired&#10;    private ${model}ReadService #LowerCase(${model})ReadService;&#10;&#10;    /**&#10;     * 查询$!{comment}&#10;     * @param id&#10;     * @return&#10;     */&#10;    @GetMapping(value = &quot;/{id}&quot;, produces = MediaType.APPLICATION_JSON_VALUE)&#10;    public ${model} find${model}(@PathVariable Long id) {&#10;        return #LowerCase(${model})ReadService.findById(id);&#10;    }&#10;&#10;    /**&#10;     * 创建$!{comment}&#10;     * @param #LowerCase(${model})&#10;     * @return&#10;     */&#10;    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)&#10;    public Long create${model}(@RequestBody ${model} #LowerCase(${model})) {&#10;        return #LowerCase(${model})WriteService.create(#LowerCase(${model}));&#10;    }&#10;}" />
+                        </CodeTemplate>
+                      </list>
+                    </option>
+                  </CodeGroup>
+                </list>
+              </option>
+              <option name="id" value="b113ebb3-3774-48a3-b003-9bb185edd43f" />
+              <option name="name" value="example" />
+            </CodeRoot>
+          </list>
+        </option>
+      </Templates>
+    </option>
+  </component>
+</application>
