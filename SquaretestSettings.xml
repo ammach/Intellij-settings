@@ -89,6 +89,22 @@
             </ProjectSettings>
           </value>
         </entry>
+        <entry key="javaskeleton">
+          <value>
+            <ProjectSettings>
+              <option name="projectName" value="javaskeleton" />
+              <option name="templateLanguage" value="Java" />
+              <option name="template">
+                <Template>
+                  <option name="presentationName" value="JUnit4Mockito.java.ft" />
+                  <option name="internalTemplateSaveName" value="SQTJ-JUnit4Mockito.java" />
+                  <option name="isInternal" value="true" />
+                </Template>
+              </option>
+              <option name="moduleAutoConfigSetting" value="AUTOMATICALLY_CONFIGURE_WHEN_POSSIBLE" />
+            </ProjectSettings>
+          </value>
+        </entry>
         <entry key="pitest">
           <value>
             <ProjectSettings>
@@ -183,6 +199,14 @@
                   <option name="internalTemplateSaveName" value="SQTJ-api-enrollment.java" />
                 </Template>
               </option>
+            </ModuleSettings>
+          </value>
+        </entry>
+        <entry key="javaskeleton_javaskeleton">
+          <value>
+            <ModuleSettings>
+              <option name="moduleName" value="javaskeleton" />
+              <option name="testDirectoryRoot" value="src/test/java" />
             </ModuleSettings>
           </value>
         </entry>

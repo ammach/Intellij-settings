@@ -3,5 +3,8 @@
     <default_templates>
       <template name="SQTJ-api-enrollment.java" reformat="false" live-template-enabled="false" />
     </default_templates>
+    <internal_templates>
+      <template name="SQTJ-JUnit4Mockito.java" reformat="false" live-template-enabled="false" enabled="true" />
+    </internal_templates>
   </component>
 </application>
