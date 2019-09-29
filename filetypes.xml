@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping pattern="Pull Request description template" type="Markdown" />
       <mapping pattern="20180622102230_create_dossier" type="PLAIN_TEXT" />
+      <mapping pattern=".env" type="PLAIN_TEXT" />
       <mapping pattern="GetFavoriteRelationships.feature" type="PLAIN_TEXT" />
       <mapping pattern="fileName" type="PLAIN_TEXT" />
       <mapping pattern="CreateSubscriptionTest" type="PLAIN_TEXT" />
