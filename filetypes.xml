@@ -10,7 +10,6 @@
       <mapping pattern="Dockerfile2" type="PLAIN_TEXT" />
       <mapping pattern="interface" type="PLAIN_TEXT" />
       <mapping ext="hbs" type="PLAIN_TEXT" />
-      <mapping ext="groovy" type="PLAIN_TEXT" />
       <mapping pattern="20180904104230_make_address_optional" type="XML" />
     </extensionMap>
   </component>
